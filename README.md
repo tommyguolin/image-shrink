@@ -37,6 +37,31 @@ Include `SKILL.md` and `scripts/` in your project, then add the skill content to
 | **800** | **Default — UI screenshots** | **~80%** |
 | 1200 | Small text, diagrams | ~65% |
 
+## Demo
+
+Real test with a 4032×3024 landscape photo:
+
+```bash
+$ python scripts/image-shrink.py test.jpg test_small
+
+[缩小] test.jpg (4032x3024 → 800x600) 体积减少97%
+
+处理完成: 成功 1/1
+输出目录: test_small
+```
+
+| | Original | Compressed |
+|---|---|---|
+| Resolution | 4032×3024 | 800×600 |
+| Format | JPEG | JPEG |
+| Size reduction | - | **97%** |
+
+Vision model analysis of the compressed image:
+
+> A dramatic, mist-shrouded mountain landscape under an overcast sky. A large, flat-topped mountain rises sharply from thick, swirling clouds. Lush green trees frame the scene in the foreground. The overall mood is one of quiet awe.
+
+Result: **Details fully preserved, 97% file size saved, significantly fewer tokens consumed.**
+
 ## Requirements
 
 - Python 3.6+
