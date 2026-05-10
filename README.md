@@ -14,7 +14,13 @@ Vision models charge by the pixel. A 4000×3000 screenshot and its 800px compres
 
 ## Setup
 
-Include `SKILL.md` and `scripts/` in your project, then add the skill content to your agent's instruction file. The exact file varies by agent (e.g. `CLAUDE.md` for Claude Code, `.cursor/rules/` for Cursor, `AGENTS.md` for Codex, etc.).
+Just tell your AI agent:
+
+```
+Install this skill globally from https://github.com/tommyguolin/image-shrink
+```
+
+The agent will clone the repo and register the skill. Done.
 
 ## Workflow
 
