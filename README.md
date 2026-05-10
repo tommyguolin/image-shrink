@@ -20,7 +20,7 @@ Include `SKILL.md` and `scripts/` in your project, then add the skill content to
 
 ```
 1. Compress all images
-       python3 scripts/image-shrink.py <input> [output_dir] [max_size]
+       python scripts/image-shrink.py <input> [output_dir] [max_size]
 
 2. Analyze compressed images with vision model
 

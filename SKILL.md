@@ -17,7 +17,7 @@ When analyzing images with AI vision, you MUST follow this exact sequence:
 
 ```
 Step 1: Compress all images
-    python3 scripts/image-shrink.py <input> <output_dir> [max_size]
+    python scripts/image-shrink.py <input> <output_dir> [max_size]
 
 Step 2: Analyze compressed images
     Use the compressed files in <output_dir> for vision analysis.
@@ -28,7 +28,7 @@ Step 3: Check result quality
 
 Step 4: Fallback (only if Step 2 failed)
     Re-run with larger size:
-    python3 scripts/image-shrink.py <input> <output_dir> 1200
+    python scripts/image-shrink.py <input> <output_dir> 1200
     If still unclear, use original images directly.
 
 Step 5: Clean up
@@ -39,13 +39,13 @@ Step 5: Clean up
 
 ```bash
 # Compress a single image
-python3 scripts/image-shrink.py /tmp/screenshot.png
+python scripts/image-shrink.py /tmp/screenshot.png
 
 # Compress all images in a directory
-python3 scripts/image-shrink.py /tmp/images /tmp/images_small
+python scripts/image-shrink.py /tmp/images /tmp/images_small
 
 # Preserve more detail (for text-heavy images)
-python3 scripts/image-shrink.py /tmp/images /tmp/images_small 1200
+python scripts/image-shrink.py /tmp/images /tmp/images_small 1200
 ```
 
 ## Sizing Guide

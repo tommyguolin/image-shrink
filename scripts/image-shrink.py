@@ -3,12 +3,12 @@
 image-shrink.py - Compress images to reduce AI vision model token consumption.
 
 Usage:
-    python3 image-shrink.py <input_dir_or_file> [output_dir] [max_size]
+    python image-shrink.py <input_dir_or_file> [output_dir] [max_size]
 
 Examples:
-    python3 image-shrink.py /tmp/screenshot.png
-    python3 image-shrink.py /tmp/images /tmp/out 800
-    python3 image-shrink.py /tmp/images /tmp/out 1200
+    python image-shrink.py /tmp/screenshot.png
+    python image-shrink.py /tmp/images /tmp/out 800
+    python image-shrink.py /tmp/images /tmp/out 1200
 
 Environment variables:
     IMAGE_SHRINK_MAX_SIZE    Max pixels on longest edge (default: 800)
